@@ -1,0 +1,53 @@
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg); 
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+}
+@keyframes deg {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes translate {
+    100%{
+       opacity: 0;
+    }
+}
+body{
+    box-sizing: content-box;
+    margin:0 ;
+    padding: 0;
+    background-color: black;
+}
+.border{
+       display: flex;
+        margin: auto;
+        margin-top: 50px ;
+        width: 120px;
+        height: 120px;
+        border: #000000 2px groove;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+       animation: linear deg infinite 3s ;
+
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background: #5e5e5e;
+    border-radius: 50%;
+    animation: linear rotate infinite 4s ;
+}
+.squer{
+    position: relative;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color:#ffffff;
+    border-radius: 50%;
+    animation: linear translate infinite 0.5s ;
+}
